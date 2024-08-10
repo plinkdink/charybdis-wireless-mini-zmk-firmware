@@ -150,16 +150,16 @@
 
         WORK {
             // -----------------------------------------------------------------------------------------
-            // | TAB  |  Q |  W  |  UP   | CTRL  |   T   |   |  /   |   7   |  8  |  9  |  -  | BKSP |
-            // | ESC  |  A | LFT |  DWN  |  RGHT |  ALT  |   |  *   |   4   |  5  |  6  |  +  |  =   |
-            // | SHFT |  Z |  X  |   C   | PG_UP | PG_DN |   |  0   |   1   |  2  |  3  |  .  | DEL  |
-            //                   | "/GUI |   L0  |  SPC  |   | ENT  | L2/L3 |
+            // | TAB  |  Q |   W   |  UP   | CTRL  |   T   |   |  /   |   7   |  8  |  9  |  -  | BKSP |
+            // | ESC  |  A |  LFT  |  DWN  |  RGHT |  ALT  |   |  *   |   4   |  5  |  6  |  +  |  =   |
+            // | SHFT |  Z | PG_UP | PG_UP | LCK   |  RCK  |   |  0   |   1   |  2  |  3  |  .  | DEL  |
+            //                     | "/GUI |   L0  |  SPC  |   | ENT  | L2/L3 |
 
             bindings = <
-&trans     &trans  &trans    &kp UP_ARROW                &kp LCTRL      &trans           &kp KP_SLASH     &kp N7  &kp N8  &kp N9  &kp MINUS     &trans
-&kp ESC    &trans  &kp LEFT  &kp DOWN                    &kp RIGHT      &kp LEFT_ALT     &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp KP_PLUS   &kp EQUAL
-&trans     &trans  &trans    &trans                      &kp LC(PG_UP)  &kp LC(PG_DN)    &kp N0           &kp N1  &kp N2  &kp N3  &kp DOT       &trans
-                             &mt LEFT_GUI DOUBLE_QUOTES  &to 0          &trans           &trans           &td2
+&trans     &trans  &trans          &kp UP_ARROW                &kp LCTRL      &trans           &kp KP_SLASH     &kp N7  &kp N8  &kp N9  &kp MINUS     &trans
+&kp ESC    &trans  &kp LEFT        &kp DOWN                    &kp RIGHT      &kp LEFT_ALT     &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp KP_PLUS   &kp EQUAL
+&trans     &trans  &kp LC(PG_UP)   &kp LC(PG_DN)               &mkp LCLK      &mkp RCLK        &kp N0           &kp N1  &kp N2  &kp N3  &kp DOT       &trans
+                                   &mt LEFT_GUI DOUBLE_QUOTES  &to 0          &trans           &trans           &td2
             >;
         };
 
@@ -189,14 +189,14 @@
             >;
         };
 
-        Mouse {
-            bindings = <
-&none      &none     &msc MOVE_DOWN  &mmv MOVE_UP    &msc MOVE_UP     &none        &kp K_COPY  &none      &none      &none  &none  &none
-&kp LCTRL  &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5     &kp K_PASTE &mkp LCLK  &mkp RCLK  &none  &none  &none
-&kp LSHFT  &none     &msc MOVE_LEFT  &none           &msc MOVE_RIGHT  &none        &none       &none      &none      &none  &none  &none
-                                     &none           &none            &none        &none       &none
-            >;
-        };
+        // Mouse {
+//            bindings = <
+// &none      &none     &msc MOVE_DOWN  &mmv MOVE_UP    &msc MOVE_UP     &none        &kp K_COPY  &none      &none      &none  &none  &none
+// &kp LCTRL  &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5     &kp K_PASTE &mkp LCLK  &mkp RCLK  &none  &none  &none
+// &kp LSHFT  &none     &msc MOVE_LEFT  &none           &msc MOVE_RIGHT  &none        &none       &none      &none      &none  &none  &none
+//                                     &none           &none            &none        &none       &none
+//            >;
+//        };
 
 
     };
