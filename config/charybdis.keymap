@@ -150,16 +150,16 @@
 
         WORK {
             // -----------------------------------------------------------------------------------------
-            // | TAB  |  Q |   W   |  UP   | CTRL  |   T   |   |  /   |   7   |  8  |  9  |  -  | BKSP |
-            // | ESC  |  A |  LFT  |  DWN  |  RGHT |  ALT  |   |  *   |   4   |  5  |  6  |  +  |  =   |
-            // | SHFT |  Z | PG_UP | PG_UP | LCK   |  RCK  |   |  0   |   1   |  2  |  3  |  .  | DEL  |
-            //                     | "/GUI |   L0  |  SPC  |   | ENT  | L2/L3 |
+            // | TAB  |  Q  |   W   |  UP   | CTRL  | SCR UP |   |  /   |   7   |  8  |  9  |  -  | BKSP |
+            // | ESC  |  A  |  LFT  |  DWN  |  RGHT | SCR DN |   |  *   |   4   |  5  |  6  |  +  |  =   |
+            // | SHFT | ALT | PG_UP | PG_UP | LCK   |  RCK   |   |  0   |   1   |  2  |  3  |  .  | DEL  |
+            //                      | "/GUI |   L0  |  SPC   |   | ENT  | L2/L3 |
 
             bindings = <
-&trans     &trans  &trans          &kp UP_ARROW                &kp LCTRL      &trans           &kp KP_SLASH     &kp N7  &kp N8  &kp N9  &kp MINUS     &trans
-&kp ESC    &trans  &kp LEFT        &kp DOWN                    &kp RIGHT      &kp LEFT_ALT     &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp KP_PLUS   &kp EQUAL
-&trans     &trans  &kp LC(PG_UP)   &kp LC(PG_DN)               &mkp LCLK      &mkp RCLK        &kp N0           &kp N1  &kp N2  &kp N3  &kp DOT       &trans
-                                   &mt LEFT_GUI DOUBLE_QUOTES  &to 0          &trans           &trans           &td2
+&trans     &trans        &trans          &kp UP_ARROW                &kp LCTRL      &msc MOVE_UP     &kp KP_SLASH     &kp N7  &kp N8  &kp N9  &kp MINUS     &trans
+&kp ESC    &trans        &kp LEFT        &kp DOWN                    &kp RIGHT      &msc MOVE_DOWN   &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp KP_PLUS   &kp EQUAL
+&trans     &kp LEFT_ALT  &kp LC(PG_UP)   &kp LC(PG_DN)               &mkp LCLK      &mkp RCLK        &kp N0           &kp N1  &kp N2  &kp N3  &kp DOT       &trans
+                                         &mt LEFT_GUI DOUBLE_QUOTES  &to 0          &trans           &trans           &td2
             >;
         };
 
@@ -193,7 +193,7 @@
             bindings = <
 &kp ESC &kp TAB    &kp Q  &kp W     &kp E     &kp R        &msc MOVE_UP   &mkp MB3   &mkp MB3   &none  &none  &none
 &kp J   &kp LCTRL  &kp A  &kp S     &kp D     &kp F        &msc MOVE_DOWN &mkp LCLK  &mkp RCLK  &none  &none  &none
-&kp K   &kp LSHFT  &kp Z  &kp X     &kp C     &kp V        &kp T          &none      &none      &none  &none  &none
+&kp O   &kp LSHFT  &kp Z  &kp X     &kp C     &kp V        &kp T          &none      &none      &none  &none  &none
                           &kp LALT  &kp M     &kp SPACE    &kp RET        &to 0
            >;
        };
