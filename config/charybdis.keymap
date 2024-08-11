@@ -191,10 +191,10 @@
 
         BG3 {
             bindings = <
-&ESC   &TAB      &kp Q  &kp W  &kp E  &kp R     &msc MOVE_UP   &mkp MCLK  &mkp MCLK  &none  &none  &none
-&kp J  &kp LCTRL &kp A  &kp S  &kp D  &kp F     &msc MOVE_DOWN &mkp LCLK  &mkp RCLK  &none  &none  &none
-&kp O  &kp LSHFT &kp Z  &kp X  &kp C  &kp V     &kp T          &none      &none      &none  &none  &none
-                        &LALT  &kp M  &kp SPACE &kp RET        &to 0
+&kp ESC &kp TAB    &kp Q  &kp W     &kp E     &kp R        &msc MOVE_UP   &mkp MB3   &mkp MB3   &none  &none  &none
+&kp J   &kp LCTRL  &kp A  &kp S     &kp D     &kp F        &msc MOVE_DOWN &mkp LCLK  &mkp RCLK  &none  &none  &none
+&kp K   &kp LSHFT  &kp Z  &kp X     &kp C     &kp V        &kp T          &none      &none      &none  &none  &none
+                          &kp LALT  &kp M     &kp SPACE    &kp RET        &to 0
            >;
        };
 
