@@ -70,7 +70,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD2";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&mo 2>;
+            bindings = <&mo 2>, <&mo 3>;
 
             tapping-term-ms = <200>;
         };
