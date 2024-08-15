@@ -146,7 +146,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TDPGUP";
             #binding-cells = <0>;
-            bindings = <&kp LC(PG_UP)>, <&kp LC(PG_DN)>;
+            bindings = <&kp LC(PG_DN)>, <&kp LC(PG_UP)>;
         };
     };
 
@@ -211,9 +211,9 @@
 
         BG3 {
             bindings = <
-&kp ESC  &kp TAB    &kp Q  &kp W     &kp E  &kp R        &msc MOVE_UP    &mkp MB3   &mkp MB3   &none  &none  &none
+&kp ESC  &kp TAB    &kp Q  &kp W     &kp E  &kp R        &msc MOVE_UP    &none      &none      &none  &none  &none
 &kp J    &kp LCTRL  &kp A  &kp S     &kp D  &kp F        &msc MOVE_DOWN  &mkp LCLK  &mkp RCLK  &none  &none  &none
-&kp O    &kp LSHFT  &kp Z  &kp X     &kp C  &kp V        &kp T           &none      &none      &none  &none  &none
+&kp O    &kp LSHFT  &kp Z  &kp X     &kp C  &kp V        &kp T           &mkp MB3   &mo 6      &none  &none  &none
                            &kp LALT  &kp M  &kp SPACE    &kp RET         &to 0
             >;
         };
@@ -226,5 +226,16 @@
                                   &mt LEFT_GUI DOUBLE_QUOTES  &to 0          &trans           &trans           &td2
             >;
         };
+
+        TransScroll {
+            bindings = <
+&trans   &trans  &trans  &trans   &trans   &trans    &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans  &trans  &trans   &trans   &trans    &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans  &trans  &trans   &trans   &trans    &trans  &trans  &trans  &trans  &trans   &trans
+                         &trans   &trans   &trans    &trans  &trans
+            >;
+        };
+
+
     };
 };
