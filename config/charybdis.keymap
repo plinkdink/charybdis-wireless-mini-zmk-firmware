@@ -61,7 +61,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD1";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 6>;
+            bindings = <&mo 1>, <&mo 5>;
 
             tapping-term-ms = <200>;
         };
@@ -212,18 +212,9 @@
         BG3 {
             bindings = <
 &kp ESC  &kp TAB    &kp Q  &kp W     &kp E  &kp R        &msc MOVE_UP    &none      &none      &none  &none  &none
-&kp J    &kp LCTRL  &kp A  &kp S     &kp D  &kp F        &msc MOVE_DOWN  &mkp LCLK  &mkp RCLK  &mo 6  &none  &none
+&kp J    &kp LCTRL  &kp A  &kp S     &kp D  &kp F        &msc MOVE_DOWN  &mkp LCLK  &mkp RCLK  &mo 5  &none  &none
 &kp O    &kp LSHFT  &kp Z  &kp X     &kp C  &kp V        &kp T           &mkp MB3   &none      &none  &none  &none
                            &kp LALT  &kp M  &kp SPACE    &kp RET         &to 0
-            >;
-        };
-
-        OHMouse {
-            bindings = <
-&to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &kp LC(C)   &none      &none      &none  &none  &none
-&to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &kp LC(V)   &mkp LCLK  &mkp RCLK  &mo 6  &none  &none
-&to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &none       &mkp MB3   &kp ESC    &none  &none  &none
-                     &to 0  &to 0  &to 0  &kp RET     &to 0
             >;
         };
 
