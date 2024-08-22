@@ -203,7 +203,7 @@
             display-name = "BT";
             bindings = <
 &to 0  &td_bt0  &td_bt1  &td_bt2     &td_bt3  &td_bt4        &wp1         &wp2   &wp3   &wp4   &to 0  &out OUT_TOG
-&to 0  &to 4    &to 0    &to 0       &to 0    &bootloader    &bootloader  &to 6  &to 0  &to 0  &to 0  &to 0
+&to 0  &to 0    &to 0    &to 0       &to 0    &bootloader    &bootloader  &to 4  &to 0  &to 0  &to 0  &to 0
 &to 0  &to 0    &to 0    &to 0       &to 0    &to 0          &to 0        &to 0  &to 0  &to 0  &to 0  &to 0
                          &kp KP_NUM  &to 0    &to 0          &to 0        &mo 0
             >;
@@ -211,19 +211,19 @@
 
         BG3 {
             bindings = <
-&kp ESC  &kp TAB    &kp Q  &kp W     &kp E  &kp R        &msc MOVE_UP    &none      &none      &none  &none  &none
-&kp J    &kp LCTRL  &kp A  &kp S     &kp D  &kp F        &msc MOVE_DOWN  &mkp LCLK  &mkp RCLK  &mo 5  &none  &none
-&kp O    &kp LSHFT  &kp Z  &kp X     &kp C  &kp V        &kp T           &mkp MB3   &none      &none  &none  &none
-                           &kp LALT  &kp M  &kp SPACE    &kp RET         &to 0
+&kp ESC  &kp TAB    &kp Q  &kp W     &kp E  &kp R        &kp LC(C)  &kp ESC    &none      &none  &none  &none
+&kp J    &kp LCTRL  &kp A  &kp S     &kp D  &kp F        &kp LC(V)  &mkp LCLK  &mkp RCLK  &mo 5  &none  &none
+&kp O    &kp LSHFT  &kp Z  &kp X     &kp C  &kp V        &kp T      &mkp MB3   &none      &none  &none  &none
+                           &kp LALT  &kp M  &kp SPACE    &kp RET    &to 0
             >;
         };
 
         TransScroll {
             bindings = <
-&trans   &trans  &trans  &trans   &trans   &trans    &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &trans  &trans  &trans   &trans   &trans    &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &trans  &trans  &trans   &trans   &trans    &trans  &trans  &trans  &trans  &trans   &trans
-                         &trans   &trans   &trans    &trans  &trans
+&trans   &trans  &trans     &trans   &trans   &trans    &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans  &trans     &trans   &trans   &trans    &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans  &kp LCTRL  &trans   &trans   &trans    &trans  &trans  &trans  &trans  &trans   &trans
+                            &trans   &trans   &trans    &trans  &trans
             >;
         };
 
